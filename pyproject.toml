@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "demo_cookiecutter_data_experimentation"
+version = "0.1.0"
+description = "demo for cookiecutter-data-experimentation"
+authors = ["acirtep <facirtep>"]
+readme = "README.md"
+packages = [
+  {include = "demo_cookiecutter_data_experimentation"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.20.0"
+plotly = "^5.14.0"
+duckdb = "^0.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.8.0"
+black = "^23.3.0"
+pre-commit = "^3.0.0"
+commitizen = "^2.40.0"
+pytest = "^7.2.2"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.0.1"
+tag_format = "$version"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
